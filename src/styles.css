@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #dadada;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.card{
+  width: 360px;
+  height: 210px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 5px 20px #ababab;
+  float: left;
+
+}
+.form-list_row {
+ margin-top: 35px;
+}
+
+.form-list-row-second{
+  margin-top: 10px;
+}
+
+.form-list{
+  list-style: none;
+  position: relative;
+  top: 20px;
+}
+
+
+label{
+  margin-bottom: -10px !important;
+  font-size: x-small;
+}
+
+input{
+  position: relative;
+  border: none;
+  border-bottom: 1px solid #404040;
+
+}
+
+input:focus{
+  outline: none;
+}
+
+.inpName{
+  width: 280px;
+}
+
+ .cc_month , .cc_year {
+  width: 40px;
+}
+
+
+
+.cc_month, .cc_year::placeholder{
+  text-align: center;
+}
+
+.dateSeparator{
+  margin: 0 5px;
+}
+.form-list_input-inline{
+  display: flex;
+
+}
+
+.inpCWCVC{
+  width: 40px;
+}
+
+.form-CWCVC{
+  float: left;
+  margin-left: 100px;
+}
+
+.form-MMYY{
+  float: left;
+}
+
+.card-description{
+  position: relative;
+  color: #9b9b9b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.box{
+
+  position: relative;
+  float: left;
+  margin: 20px 10px;
+
+}
+
+main{
+width: 80%;
+  margin-top: 100px;
+}
+
+.inpEmail{
+  width: 360px;
+  height: 30px;
+  border: 1px solid #ababab;
+}
+
+.inpEmail::placeholder{
+  text-align: left ;
+}
+
+.inpFields{
+  float: left;
+
+}
+
+button{
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  width: 360px;
+
+  border: none;
+  border-bottom: 1px solid #404040;
+}
