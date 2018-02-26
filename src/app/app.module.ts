@@ -6,13 +6,15 @@ import {CommonModule} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import {BrandImageComponent} from './brand-image/brand-image.component';
+import {CurrencySelectionComponent} from './currency-selection/currency-selection.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrandImageComponent
+    BrandImageComponent,
+    CurrencySelectionComponent
   ],
   imports: [
     BrowserModule,

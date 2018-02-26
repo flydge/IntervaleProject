@@ -52,6 +52,7 @@
   </div>
 
   <div class="box inpFields">
+
     <div>
       <input type="checkbox">
       <label>Отправить чек на e-mail</label>
@@ -59,20 +60,7 @@
         <input type="email" placeholder=" Ваш e-mail" class="inpEmail">
       </div>
     </div>
-    <div>
-      <label>Сумма перевода</label>
-      <div>
-        <input type="email" placeholder=" От 500 до 500000" class="inpEmail">
-      </div>
-    </div>
-
-    <div>
-      <label>Итоговая сумма</label>
-      <div>
-        <input type="email" placeholder=" От 680 до 530150" class="inpEmail">
-      </div>
-    </div>
-
+    <app-currency-selection></app-currency-selection>
 
     <button>Перевести
     </button>

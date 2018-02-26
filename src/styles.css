@@ -56,15 +56,25 @@ input:focus{
 
 .cc_month, .cc_year {
   width: 40px;
+
 }
 
-.cc_month, .cc_year, .inpEmail, .inpCWCVC, .inpName ::placeholder {
-  text-align: left;
+.cc_month, .cc_year, .inpEmail, .inpCWCVC, .inpName::placeholder {
   font-weight: normal;
 }
 
+.cc_month, .cc_year::placeholder {
+  text-align: center;
+
+}
+
+.inpEmail, .inpCWCVC, .inpName ::placeholder {
+  text-align: left;
+
+}
+
 .dateSeparator{
-  margin: 0 5px;
+  margin: 5px 5px 0;
 }
 .form-list_input-inline{
   display: flex;
