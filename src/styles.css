@@ -18,7 +18,7 @@ body{
 
 }
 .form-list_row {
- margin-top: 35px;
+  margin-top: 35px;
 }
 
 .form-list-row-second{
@@ -33,15 +33,17 @@ body{
 
 
 label{
-  margin-bottom: -10px !important;
-  font-size: x-small;
+  margin-bottom: -20px !important;
+  font-size: small;
 }
 
 input{
   position: relative;
   border: none;
   border-bottom: 1px solid #404040;
-
+  /*height: 40px;*/
+  font-size: large;
+  font-weight: bold;
 }
 
 input:focus{
@@ -52,14 +54,13 @@ input:focus{
   width: 280px;
 }
 
- .cc_month , .cc_year {
+.cc_month, .cc_year {
   width: 40px;
 }
 
-
-
-.cc_month, .cc_year::placeholder{
-  text-align: center;
+.cc_month, .cc_year, .inpEmail, .inpCWCVC, .inpName ::placeholder {
+  text-align: left;
+  font-weight: normal;
 }
 
 .dateSeparator{
@@ -101,13 +102,12 @@ input:focus{
 }
 
 main{
-width: 80%;
+  width: 80%;
   margin-top: 100px;
 }
 
 .inpEmail{
   width: 360px;
-  height: 30px;
   border: 1px solid #ababab;
 }
 
@@ -130,3 +130,12 @@ button{
   border: none;
   border-bottom: 1px solid #404040;
 }
+
+.brandImage {
+  /*position: absolute;*/
+  float: right;
+  margin-right: 15px;
+  margin-top: -40px;
+}
+
+

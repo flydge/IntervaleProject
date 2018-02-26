@@ -1,0 +1,11 @@
+<li *ngIf="getFirstSymb()">
+
+  <img src="../../assets/{{getFirstSymb()}}" class="brandImage">
+
+</li>
+<li class="form-list_row">
+  <label>Номер карты</label>
+  <div>
+    <input type="number" class="inpName" [(ngModel)]=inputStr>
+  </div>
+</li>

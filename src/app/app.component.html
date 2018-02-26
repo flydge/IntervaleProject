@@ -1,3 +1,96 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<main>
+  <div class="box">
+    <div class="card-description">Данные отправителя</div>
+    <div class="card">
+      <ul class="form-list">
+        <app-brand-image></app-brand-image>
+        <li class="form-list-row-second">
+          <div class="form-MMYY">
+            <label>Срок действия</label>
+            <div class="form-list_input-inline">
+              <input type="text" class="cc_month" placeholder="ММ" pattern="\\d*" minlength="2" maxlength="2"
+                     required="">
+              <span class="dateSeparator">/</span>
+              <input type="text" class="cc_year" placeholder="ГГ" pattern="\\2d*" minlength="2" maxlength="2"
+                     required="">
+            </div>
+          </div>
+          <div class="form-CWCVC">
+            <label>CW/CVC
+              <a href="#cvv-modal" class="button--transparent modal-open button--info">
+                <svg class="nc-icon glyph" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+                  <g>
+                    <path fill="#35a4fb"
+                          d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M8,13c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1 C9,12.6,8.6,13,8,13z M9.5,8.4C9,8.7,9,8.8,9,9v1H7V9c0-1.3,0.8-1.9,1.4-2.3C8.9,6.4,9,6.3,9,6c0-0.6-0.4-1-1-1 C7.6,5,7.3,5.2,7.1,5.5L6.6,6.4l-1.7-1l0.5-0.9C5.9,3.6,6.9,3,8,3c1.7,0,3,1.3,3,3C11,7.4,10.1,8,9.5,8.4z"></path>
+                  </g>
+                </svg>
+              </a>
+
+            </label>
+            <div>
+              <input type="number" class="inpCWCVC">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="card-description">Данные отправителя</div>
+
+    <div class="card">
+      <ul class="form-list">
+        <li class="form-list_row">
+          <label>Номер карты</label>
+          <div>
+            <input type="number" class="inpName">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box inpFields">
+    <div>
+      <input type="checkbox">
+      <label>Отправить чек на e-mail</label>
+      <div>
+        <input type="email" placeholder=" Ваш e-mail" class="inpEmail">
+      </div>
+    </div>
+    <div>
+      <label>Сумма перевода</label>
+      <div>
+        <input type="email" placeholder=" От 500 до 500000" class="inpEmail">
+      </div>
+    </div>
+
+    <div>
+      <label>Итоговая сумма</label>
+      <div>
+        <input type="email" placeholder=" От 680 до 530150" class="inpEmail">
+      </div>
+    </div>
 
 
+    <button>Перевести
+    </button>
+  </div>
+
+  <div class="box">
+    <input type="checkbox">
+    <label>Добавить сообщение получателю
+      <a href="#cvv-modal" class="button--transparent modal-open button--info">
+        <svg class="nc-icon glyph" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+          <g>
+            <path fill="#35a4fb"
+                  d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M8,13c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1 C9,12.6,8.6,13,8,13z M9.5,8.4C9,8.7,9,8.8,9,9v1H7V9c0-1.3,0.8-1.9,1.4-2.3C8.9,6.4,9,6.3,9,6c0-0.6-0.4-1-1-1 C7.6,5,7.3,5.2,7.1,5.5L6.6,6.4l-1.7-1l0.5-0.9C5.9,3.6,6.9,3,8,3c1.7,0,3,1.3,3,3C11,7.4,10.1,8,9.5,8.4z"></path>
+          </g>
+        </svg>
+      </a>
+    </label>
+  </div>
+
+
+</main>
