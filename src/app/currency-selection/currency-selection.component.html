@@ -1,13 +1,73 @@
-<div>
-  <label>Сумма перевода</label>
-  <div>
-    <input type="email" placeholder=" От 500 до 500000 {{currency}}" class="inpEmail">
+<form [formGroup]="curForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input type="checkbox" id="addCheckLabelThrow">
+    <label for="addCheckLabelThrow">Отправить чек на e-mail</label>
+    <input
+      type="email"
+      placeholder=" Ваш e-mail"
+      class="inpSize form-control"
+      formControlName="email"
+      [ngClass]="{'is-invalid': curForm.get('email').invalid && curForm.get('email').touched}"
+    >
+    <span *ngIf="curForm.get('email').invalid && curForm.get('email').touched">
+      <small
+        *ngIf="curForm.get('email').errors['email'] && curForm.get('email').value !== ''"
+        class="form-text text-muted"
+      >
+        email is invalid!
+      </small>
+      <small
+        *ngIf="curForm.get('email').errors['required']"
+        class="form-text text-muted"
+      >
+        email is empty!
+      </small>
+    </span>
   </div>
-</div>
 
-<div>
-  <label>Итоговая сумма</label>
-  <div>
-    <input type="email" placeholder=" От 680 до 530150 {{currency}}" class="inpEmail">
+  <div class="form-group">
+    <label for="transferAmountLblTrow">Сумма перевода</label>
+    <input
+      type="number"
+      [placeholder]="transferAmountPlaceholder()"
+      class="inpSize form-control"
+      formControlName="transferAmount"
+      id="transferAmountLblTrow"
+      [ngClass]="{'is-invalid': transferAmountCheck() !== null && curForm.get('transferAmount').touched}"
+
+    >
+    <span *ngIf="curForm.get('transferAmount').touched">
+      <small
+        class="form-text text-muted"
+        *ngIf="transferAmountCheck()"
+      >
+        {{transferAmountCheck()}}
+      </small>
+    </span>
   </div>
-</div>
+
+  <div class="form-group">
+    <label for="totalAmountLblThrow">Итоговая сумма</label>
+    <input
+      type="number"
+      [placeholder]="totalAmountPlaceholder()"
+      class="inpSize form-control"
+      formControlName="totalAmount"
+      id="totalAmountLblThrow"
+      [ngClass]="{'is-invalid': curForm.get('totalAmount').invalid && curForm.get('totalAmount').touched}"
+    >
+    <span *ngIf="curForm.get('totalAmount').touched">
+      <small
+        class="form-text text-muted"
+        *ngIf="curForm.get('totalAmount').invalid && curForm.get('totalAmount').touched"
+      >
+          <span *ngIf="curForm.get('totalAmount').errors['emptySpaceErr']">total amount is empty!</span>
+          <span *ngIf="curForm.get('totalAmount').errors['smallAmountErr']">total amount is too small! less than {{totalAmountMin}}</span>
+          <span *ngIf="curForm.get('totalAmount').errors['largeAmountErr']">total amount is too large! more than {{totalAmountMax}}</span>
+      </small>
+    </span>
+  </div>
+
+  <button type="submit" class="btn btn-success">Перевести</button>
+
+</form>

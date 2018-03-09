@@ -59,7 +59,7 @@ input:focus{
 
 }
 
-.cc_month, .cc_year, .inpEmail, .inpCWCVC, .inpName::placeholder {
+.cc_month, .cc_year, .inpSize, .inpCWCVC, .inpName::placeholder {
   font-weight: normal;
 }
 
@@ -68,7 +68,7 @@ input:focus{
 
 }
 
-.inpEmail, .inpCWCVC, .inpName ::placeholder {
+.inpSize, .inpCWCVC, .inpName ::placeholder {
   text-align: left;
 
 }
@@ -116,14 +116,6 @@ main{
   margin-top: 100px;
 }
 
-.inpEmail{
-  width: 360px;
-  border: 1px solid #ababab;
-}
-
-.inpEmail::placeholder{
-  text-align: left ;
-}
 
 .inpFields{
   float: left;
@@ -132,8 +124,7 @@ main{
 
 button{
   margin-top: 10px;
-  background-color: green;
-  color: white;
+
   text-align: center;
   width: 360px;
 

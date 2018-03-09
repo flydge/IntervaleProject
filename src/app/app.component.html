@@ -37,14 +37,14 @@
   </div>
 
   <div class="box">
-    <div class="card-description">Данные отправителя</div>
+    <div class="card-description">Данные получателя</div>
 
     <div class="card">
       <ul class="form-list">
         <li class="form-list_row">
-          <label>Номер карты</label>
+          <label for="rcpNumbCardLabelThrow">Номер карты</label>
           <div>
-            <input type="number" class="inpName">
+            <input id="rcpNumbCardLabelThrow" type="number" class="inpName">
           </div>
         </li>
       </ul>
@@ -52,23 +52,12 @@
   </div>
 
   <div class="box inpFields">
-
-    <div>
-      <input type="checkbox">
-      <label>Отправить чек на e-mail</label>
-      <div>
-        <input type="email" placeholder=" Ваш e-mail" class="inpEmail">
-      </div>
-    </div>
     <app-currency-selection></app-currency-selection>
-
-    <button>Перевести
-    </button>
   </div>
 
   <div class="box">
-    <input type="checkbox">
-    <label>Добавить сообщение получателю
+    <input type="checkbox" id="addMsgLabelThrow">
+    <label for="addMsgLabelThrow">Добавить сообщение получателю
       <a href="#cvv-modal" class="button--transparent modal-open button--info">
         <svg class="nc-icon glyph" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
           <g>
